@@ -293,7 +293,7 @@ public class MobsmsPlugin implements MethodCallHandler {
 	else if (call.method.equals("enableWarn")) {
 		boolean isWarn = call.argument("isWarn");
 		SMSSDKLog.d("isWarn: " + isWarn);
-		SPHelper.getInstance().setWarnWhenReadContact(isWarn);
+		//SPHelper.getInstance().setWarnWhenReadContact(isWarn);
 		Map<String, Object> map = new HashMap<>();
 		onSuccess(rst, map);
 	}
